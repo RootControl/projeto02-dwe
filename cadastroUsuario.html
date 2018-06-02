@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-sacale=1, shrink-to-fit=no">
     <title>Cadastro de Deputados</title>
 
+    <script type="text/javascript" src="js/script.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -53,7 +54,7 @@
             <div class="form-row">
                 <div class="form-group col-md-9">
                     <label>Endereço</label>
-                    <input id="endereco" type="text" class="form-control" placeholder="Doutor Sales de Oliveira">
+                    <input id="rua" type="text" class="form-control" placeholder="Doutor Sales de Oliveira">
                 </div>
                 <div class="form-group col-md-3">
                     <label>Número</label>
@@ -90,7 +91,7 @@
             </div><br>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <button type="submit" class="btn btn-primary" onclick="cadastrarCandidato()">Cadastrar</button>
             </div>
 
         </form>
