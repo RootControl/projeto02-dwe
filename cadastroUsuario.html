@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sacale=1, shrink-to-fit=no">
+    <title>Cadastro de Deputados</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light" data-gr-c-s-loaded="true">
+
+    <header class="header">
+        <h1>Cadastro de Candidatos a Deputados Estadual do Estado de São Paulo</h1>
+        <p class="lead">Esta página está destinado ao cadastro de todos os candidatos a Deputado Estadual do Estado de São Paulo.</p>
+    </header><br>
+
+    <div class="container">
+        <form method="get">
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>CPF</label>
+                    <input id="cpf" type="text" class="form-control" placeholder="">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Sexo</label>
+                    <select id="sexo" class="form-control">
+                        <option selected>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Data de Nascimento</label>
+                    <input id="dataNascimento" type="date" class="form-control" placeholder="">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Número de cadastro na Justiça Eleitoral</label>
+                    <input id="cadastroJusticaEleitoral" type="text" class="form-control" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-9">
+                    <label>Endereço</label>
+                    <input id="endereco" type="text" class="form-control" placeholder="Doutor Sales de Oliveira">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Número</label>
+                    <input id="numero" type="number" class="form-control" placeholder="0">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Estado</label>
+                    <select id="estado" class="form-control">
+                        <option selected>Estado</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Cidade</label>
+                    <select id="cidade" class="form-control">
+                        <option selected>Cidade</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input id="email" type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Senha</label>
+                    <input id="senha" type="password" class="form-control" placeholder="Senha">
+                </div>
+            </div><br>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+
+        </form>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
