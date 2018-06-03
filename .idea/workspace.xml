@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b19a09-deb5-4e71-8efe-bacde177781f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cadastroUsuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/cadastroUsuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/classes/Candidato.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="cadastroUsuario.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cadastroUsuario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="96" column="15" lean-forward="true" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+            <state relative-caret-position="268">
+              <caret line="93" column="103" selection-start-line="93" selection-start-column="103" selection-end-line="93" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -38,8 +36,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+            <state relative-caret-position="455">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
         </entry>
@@ -195,12 +193,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527976179762</updated>
-      <workItem from="1527976185769" duration="5233000" />
+      <workItem from="1527976185769" duration="5856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5233000" />
+    <option name="totallyTimeSpent" value="5856000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -224,7 +222,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3297414" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297414" />
       <window_info anchor="bottom" id="Terminal" weight="0.3297414" />
       <window_info id="Capture Tool" />
@@ -280,15 +278,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cadastroUsuario.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="96" column="15" lean-forward="true" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+        <state relative-caret-position="268">
+          <caret line="93" column="103" selection-start-line="93" selection-start-column="103" selection-end-line="93" selection-end-column="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+        <state relative-caret-position="455">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>

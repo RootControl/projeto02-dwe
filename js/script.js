@@ -52,16 +52,16 @@ var listaDeCandidatos = [];
 
 function cadastrarCandidato() {
     listaDeCandidatos = new Candidato(
-        document.getElementById("nome").value,
-        document.getElementById("cpf").value,
-        document.getElementById("sexo").value,
-        document.getElementById("dataNascimento").value,
-        document.getElementById("cadastroJusticaEleitoral").value,
-        document.getElementById("rua").value,
-        document.getElementById("numero").value,
-        document.getElementById("estado").value,
-        document.getElementById("cidade").value,
-        document.getElementById("email").value,
-        document.getElementById("senha").value
+        document.getElementById("nome"),
+        document.getElementById("cpf"),
+        document.getElementById("sexo"),
+        document.getElementById("dataNascimento"),
+        document.getElementById("cadastroJusticaEleitoral"),
+        document.getElementById("rua"),
+        document.getElementById("numero"),
+        document.getElementById("estado"),
+        document.getElementById("cidade"),
+        document.getElementById("email"),
+        document.getElementById("senha")
     );
 }
