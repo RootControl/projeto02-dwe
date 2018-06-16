@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-sacale=1, shrink-to-fit=no">
     <title>Cadastro de Deputados</title>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/cadastro.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,16 +19,16 @@
     </header><br>
 
     <div class="container">
-        <form method="get">
+        <form method="post" class="formulario">
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="">
+                    <input type="text" class="form-control" id="nome" placeholder="" value="luiz">
                 </div>
                 <div class="form-group col-md-6">
                     <label>CPF</label>
-                    <input id="cpf" type="text" class="form-control" placeholder="">
+                    <input id="cpf" type="text" class="form-control" placeholder="" value="123">
                 </div>
 
             </div>
@@ -36,62 +37,70 @@
                 <div class="form-group col-md-4">
                     <label>Sexo</label>
                     <select id="sexo" class="form-control">
-                        <option selected>Masculino</option>
+                        <option value="masculino" selected>Masculino</option>
                         <option>Feminino</option>
                         <option>Outros</option>
                     </select>
                 </div>
                 <div class="form-group col-md-2">
                     <label>Data de Nascimento</label>
-                    <input id="dataNascimento" type="date" class="form-control" placeholder="">
+                    <input id="dataNasc" type="date" class="form-control" placeholder="" value="1994-12-28">
                 </div>
                 <div class="form-group col-md-6">
                     <label>Número de cadastro na Justiça Eleitoral</label>
-                    <input id="cadastroJusticaEleitoral" type="text" class="form-control" placeholder="">
+                    <input id="cadjus" type="number" class="form-control" placeholder="">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-9">
                     <label>Endereço</label>
-                    <input id="rua" type="text" class="form-control" placeholder="Doutor Sales de Oliveira">
+                    <input id="rua" type="text" class="form-control" placeholder="Doutor Sales de Oliveira" value="sales de oliveira">
                 </div>
                 <div class="form-group col-md-3">
                     <label>Número</label>
-                    <input id="numero" type="number" class="form-control" placeholder="0">
+                    <input id="numero" type="number" class="form-control" placeholder="0" value="12">
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label>Estado</label>
                     <select id="estado" class="form-control">
-                        <option selected>Estado</option>
+                        <option value="sp" selected>Estado</option>
                         <option>...</option>
                     </select>
                 </div>
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label>Cidade</label>
                     <select id="cidade" class="form-control">
-                        <option selected>Cidade</option>
+                        <option value="campinas" selected>Cidade</option>
                         <option>...</option>
                     </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Bairro</label>
+                    <input id="bairro" type="text" class="form-control" placeholder="Bairro" value="industrial">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Email</label>
-                    <input id="email" type="email" class="form-control" placeholder="Email">
+                    <input id="email" type="email" class="form-control" placeholder="Email" value="abc@def">
                 </div>
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-3">
                     <label>Senha</label>
-                    <input id="senha" type="password" class="form-control" placeholder="Senha">
+                    <input id="senha" type="password" class="form-control" placeholder="Senha" value="123">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Confirmar Senha</label>
+                    <input id="confSenha" type="password" class="form-control" placeholder="Senha" value="123">
                 </div>
             </div><br>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-primary" onclick="cadastrarCandidato(); mostrar();">Cadastrar</button>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
             </div>
 
         </form>
@@ -99,8 +108,8 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
