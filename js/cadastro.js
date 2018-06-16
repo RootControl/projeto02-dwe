@@ -1,5 +1,5 @@
 function validarNome(nome){
-    if (nome.length > 255 || nome.length < 1) {
+    if (nome.length > 255 && nome.length < 1) {
         return false;
     }
     else return true;
@@ -117,25 +117,33 @@ $(document).submit(function cadastrarCandidato(event) {
     var senha       = $("#senha").val();
     var confSenha   = $("#confSenha").val();
 
+    var count = 6;
     if (!validarNome(nome)){
         alert("Nome inválido.");
+        count -= 1;
     }
     if (!validarCPF(cpf)) {
         alert("CPF inválido.");
+        count -= 1;
     }
     if (!validarData(dataNasc)) {
         alert("Data de Nascimento inválida.");
+        count -= 1;
     }
     if (!validarCadJus(cadjus)){
         alert("Número de cadastro inválido.");
+        count -= 1;
     }
     if (!validarIdade(dataNasc)) {
         alert("Para se cadastrar é necessário ser maior de 18 anos.");
+        count -= 1;
     }
     if (!validarSenha(senha, confSenha)) {
         alert("As senhas não são iguais.");
+        count -= 1;
     }
-    else {
+    if (count == 6) {
+        console.log(nome, cpf, sexo, dataNasc, cadjus, rua, numero, estado, cidade, bairro, email, senha);
         $.ajax({
             type: "POST",
             data: {
@@ -156,6 +164,7 @@ $(document).submit(function cadastrarCandidato(event) {
 
             success: function (result) {
                 console.log(result);
+                alert(result);
             }
         });
     }

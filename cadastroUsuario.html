@@ -7,6 +7,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/cadastro.js"></script>
+    <script type="text/javascript" src="js/popularEstadoCidade.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -24,11 +25,11 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="" value="luiz">
+                    <input type="text" class="form-control" id="nome" placeholder="">
                 </div>
                 <div class="form-group col-md-6">
                     <label>CPF</label>
-                    <input id="cpf" type="text" class="form-control" placeholder="" value="123">
+                    <input id="cpf" type="text" class="form-control" placeholder="">
                 </div>
 
             </div>
@@ -38,13 +39,13 @@
                     <label>Sexo</label>
                     <select id="sexo" class="form-control">
                         <option value="masculino" selected>Masculino</option>
-                        <option>Feminino</option>
-                        <option>Outros</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outros">Outros</option>
                     </select>
                 </div>
                 <div class="form-group col-md-2">
                     <label>Data de Nascimento</label>
-                    <input id="dataNasc" type="date" class="form-control" placeholder="" value="1994-12-28">
+                    <input id="dataNasc" type="date" class="form-control" placeholder="">
                 </div>
                 <div class="form-group col-md-6">
                     <label>Número de cadastro na Justiça Eleitoral</label>
@@ -55,11 +56,11 @@
             <div class="form-row">
                 <div class="form-group col-md-9">
                     <label>Endereço</label>
-                    <input id="rua" type="text" class="form-control" placeholder="Doutor Sales de Oliveira" value="sales de oliveira">
+                    <input id="rua" type="text" class="form-control" placeholder="Doutor Sales de Oliveira">
                 </div>
                 <div class="form-group col-md-3">
                     <label>Número</label>
-                    <input id="numero" type="number" class="form-control" placeholder="0" value="12">
+                    <input id="numero" type="number" class="form-control" placeholder="0">
                 </div>
             </div>
 
@@ -67,35 +68,33 @@
                 <div class="form-group col-md-4">
                     <label>Estado</label>
                     <select id="estado" class="form-control">
-                        <option value="sp" selected>Estado</option>
-                        <option>...</option>
+                        <option disabled selected>Estado</option>
                     </select>
                 </div>
                 <div class="form-group col-md-4">
                     <label>Cidade</label>
                     <select id="cidade" class="form-control">
-                        <option value="campinas" selected>Cidade</option>
-                        <option>...</option>
+                        <option disabled selected>Cidade</option>
                     </select>
                 </div>
                 <div class="form-group col-md-4">
                     <label>Bairro</label>
-                    <input id="bairro" type="text" class="form-control" placeholder="Bairro" value="industrial">
+                    <input id="bairro" type="text" class="form-control" placeholder="Bairro">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Email</label>
-                    <input id="email" type="email" class="form-control" placeholder="Email" value="abc@def">
+                    <input id="email" type="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group col-md-3">
                     <label>Senha</label>
-                    <input id="senha" type="password" class="form-control" placeholder="Senha" value="123">
+                    <input id="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
                 <div class="form-group col-md-3">
                     <label>Confirmar Senha</label>
-                    <input id="confSenha" type="password" class="form-control" placeholder="Senha" value="123">
+                    <input id="confSenha" type="password" class="form-control" placeholder="Senha">
                 </div>
             </div><br>
 
