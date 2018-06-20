@@ -4,12 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>Signin Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/login.js"></script>
 
     <!-- Custom styles for this template -->
 
@@ -22,10 +24,10 @@
     <div class="container text-center col-md-2">
         <form class="form-signin">
             <h1 class="h3 mb-3 font-weight-normal">Login</h1>
-            <label for="inputEmail" class="sr-only">Email</label>
-            <input id="inputEmail" class="form-control" placeholder="Email" required="" autofocus="" type="email">
+            <label for="inputEmail" class="sr-only">IdCandidato</label>
+            <input id="idcandidato" class="form-control" placeholder="Id Candidato" required="" autofocus="" type="text">
             <label for="inputPassword" class="sr-only">Senha</label>
-            <input id="inputPassword" class="form-control" placeholder="Senha" required="" type="password"><br>
+            <input id="senha" class="form-control" placeholder="Senha" required="" type="password"><br>
 
             <a class="float-left" href="cadastroUsuario.html">Cadastrar</a>
             <button class="btn  btn-primary col-md-8 float-md-right" type="submit">Sign in</button>
