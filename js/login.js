@@ -11,9 +11,9 @@ $(document).ready(function teste() {
         }
     });
 });
-
 $(document).submit(function teste(event) {
     event.preventDefault();
+
 
     idcandidato = $("#idcandidato").val();    
     var senha = $("#senha").val();
@@ -21,6 +21,7 @@ $(document).submit(function teste(event) {
         if (listaJson[i].idcandidato == idcandidato && listaJson[i].senha == senha) {
             console.log(listaJson[i].idcandidato + "\n" + listaJson[i].nome);
             sessionStorage.setItem('posicao', i);
+            sessionStorage.setItem('idcand', listaJson[i].idcandidato);
             window.location.assign("dadosUsuario.html?");
         }
         else if (listaJson[i].idcandidato == idcandidato && listaJson[i].senha != senha) {
@@ -28,7 +29,3 @@ $(document).submit(function teste(event) {
         }
     }
 });
-
-function popularDados(listaJson, posicao) {
-    document.getElementById("#nome").innerHTML = listaJson[posicao].nome;
-}

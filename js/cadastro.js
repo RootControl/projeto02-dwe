@@ -143,7 +143,7 @@ $(document).submit(function cadastrarCandidato(event) {
         count -= 1;
     }
     if (count == 6) {
-        console.log(nome, cpf, sexo, dataNasc, cadjus, rua, numero, estado, cidade, bairro, email, senha);
+        console.log(nome, cpf, sexo, dataNasc, cadjus, rua, numero, estado, cidade, email, senha);
         $.ajax({
             type: "POST",
             data: {
@@ -152,7 +152,6 @@ $(document).submit(function cadastrarCandidato(event) {
                 dataNasc: dataNasc,
                 rua: rua,
                 numero: numero,
-                bairro: bairro,
                 estado: estado,
                 cidade: cidade,
                 cpf: cpf,
@@ -165,6 +164,7 @@ $(document).submit(function cadastrarCandidato(event) {
             success: function (result) {
                 console.log(result);
                 alert(result);
+                window.location.href = "index.html";
             }
         });
     }
