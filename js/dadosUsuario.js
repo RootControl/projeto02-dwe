@@ -28,8 +28,8 @@ function remover() {
     $.ajax({
         url: "http://andrebordignon.esy.es/php/deletacandidato.php?idcandidato=" + listaJson[posicao].idcandidato,
         success: function (result) {
-            window.location.replace("index.html?");
+            alert("Seu usuário foi removido!!!");
+            window.location.href = "index.html";
         }
     });
-    alert("Seu usuário foi removido!!!");
 }
